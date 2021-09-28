@@ -141,6 +141,7 @@
           data: Boolean(isFullScreen),
         });
       }
+      document.querySelector('#player').contentDocument.querySelector('.ytp-chrome-top, .ytp-title, .ytp-show-cards-title, .ytp-title-channel-logo, .ytp-pause-overlay, .ytp-title-channel, .ytp-hide-info-bar, .ytp-hide-info-bar, .ytp-chrome-top-buttons').style.display = 'none';
 
       document.addEventListener('fullscreenchange', onFullScreenChange);
       document.addEventListener('msfullscreenchange', onFullScreenChange);
